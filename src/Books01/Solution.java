@@ -25,7 +25,5 @@ public class Solution {
         } else {
             System.out.println("N/A");
         }
-
-
     }
 }
