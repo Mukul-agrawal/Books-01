@@ -1,48 +1,46 @@
 package Books01;
 
 public class Book {
-    private String Authername;
-    private String Bookname;
-    private String ISBN;
+    private String authorName;
+    private String bookName;
+    private String isbn;
 
-    public Book(String Bookname, String Authername, String ISBN) {
-        this.Bookname = Bookname;
-        this.Authername = Authername;
-        this.ISBN = ISBN;
+    public Book(String bookName, String authorName, String isbn) {
+        this.bookName = bookName;
+        this.authorName = authorName;
+        this.isbn = isbn;
 
     }
 
-    public String getBookname() {
-        return Bookname;
+    public String getAuthorName() {
+        return authorName;
     }
 
-    public void setBookname(String Bookname) {
-        this.Bookname = Bookname;
+    public void setAuthorName(String authorName) {
+        this.authorName = authorName;
     }
 
-    public String getISBN() {
-        return ISBN;
+    public String getBookName() {
+        return bookName;
     }
 
-    public void setISBN(String ISBN) {
-        this.ISBN = ISBN;
+    public void setBookName(String bookName) {
+        this.bookName = bookName;
     }
 
-    public String getAuthername() {
-        return Authername;
+    public String getIsbn() {
+        return isbn;
     }
 
-    public void setAuthername(String Authername) {
-        this.Authername = Authername;
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
     }
 
     @Override
     public String toString() {
-        return "-----------------------------\n" +
-                "Book Name:\t" + getBookname() +
-                "\nAuthor Name:\t" + getAuthername() +
-                "\nISBN:\t" + getISBN() +
-                "\n-----------------------------";
-
+        return "AuthorName = '" + authorName + '\'' +
+                ", BookName = '" + bookName + '\'' +
+                ", ISBN = '" + isbn + '\'';
     }
 }
+
