@@ -19,8 +19,8 @@ public class Solution {
                 String ISBN = scanner.nextLine().trim();
                 books[i] = new Book(bookName,autherName,ISBN);
             }
-            for (int i = 0; i < books.length; i++) {
-                System.out.println(books[i]);
+            for (Book book : books) {
+                System.out.println(book);
             }
         } else {
             System.out.println("N/A");
